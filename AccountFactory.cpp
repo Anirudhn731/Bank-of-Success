@@ -70,15 +70,16 @@ namespace BOS{
     Account* AccountFactory::createAccount(){
         Account* acc;
         int choice = 0;
-        std::cout<<"Enter the type of Account you want to create: \n 1. Savings \n 2. Current"<<std::endl;
+        std::cout<<"Enter the type of Account you want to create: \n 1. Savings \n 2. Current\n";
+        cout << "Please enter your choice: ";
         choice = CustomConsole::ReadInt();
 
         switch(choice){
             case 1:
-            	return _instance->createSavingsAccount();
+            	return this->createSavingsAccount();
                 break;
             case 2:
-                return _instance->createCurrentAccount();
+                return this->createCurrentAccount();
                 break;
             default:
                 std::cout<<"Invalid Choice!"<<std::endl;

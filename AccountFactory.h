@@ -16,7 +16,7 @@ namespace BOS{
                 //empty
             }
         public:
-            static Account* createAccount();
+            Account* createAccount();
             static AccountFactory* createFactoryInstance();
             ~AccountFactory();
     };

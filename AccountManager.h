@@ -16,8 +16,11 @@ namespace BOS{
         public:
             static AccountManager* getInstance();
             void printTransferLog();
+            void appendTransferLog(string log);
             //void printMenu();
             void openAccount(Account* account);
+            Account* getAccount(long accNumber);
+            void displayAccounts();
             ~AccountManager();
     };
 
