@@ -14,7 +14,7 @@ namespace BOS{
             string _transferLog;
             
         public:
-            static AccountManager* getInstance();
+           // static AccountManager* getInstance();
             void printTransferLog();
             void appendTransferLog(string log);
             //void printMenu();
